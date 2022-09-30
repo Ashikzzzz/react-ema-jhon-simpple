@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import Product from '../Product/Product';
 import './Shop.css'
 
 const Shop = () => {
 
     // states 
     const [products,setProducts]=useState([])
-    console.log(products)
+    // console.log(products)
 
     // data loaded 
     useEffect(()=>{
@@ -17,7 +18,13 @@ const Shop = () => {
     return (
         <div className='shop-container'>
             <div className="product-container">
-               <h1> This is shop{products.length}</h1>
+                {/* sending products data from shop to product  */}
+              {
+                    products.map(product=><Product
+                    key={product.id}
+                    product={product}
+                    ></Product>)
+              }
             </div>
             <div className="cart-container">
             <h1>Order summery</h1>

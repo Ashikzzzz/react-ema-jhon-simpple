@@ -1,0 +1,16 @@
+.product{
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 10px;
+    /*  */
+    height: 510px;
+    width: 300px;
+    box-shadow: 2px 2px 4px cadetblue;
+}
+.product img{
+    width: 250px;
+    height: 270px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px gray;
+    margin-left: 18px;
+}
