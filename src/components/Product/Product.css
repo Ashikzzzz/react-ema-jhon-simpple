@@ -6,6 +6,8 @@
     height: 510px;
     width: 300px;
     box-shadow: 2px 2px 4px cadetblue;
+    position: relative;
+   
 }
 .product img{
     width: 250px;
@@ -14,3 +16,33 @@
     box-shadow: 4px 4px 8px gray;
     margin-left: 18px;
 }
+.add-btn{
+    width: 100%;
+    background-color: #5D6D7E;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 20;
+    box-shadow: 3px  3px 6px gray;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.add-btn:hover{
+    background-color: cadetblue;
+    color: black;
+}
+
+.cart-container{
+    background-color: #95A5A6;
+    margin-left: 15px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 10px;
+    margin-top: 15px;
+    position: sticky;
+    bottom: 0;
+}
+
+

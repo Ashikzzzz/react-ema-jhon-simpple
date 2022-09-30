@@ -1,0 +1,10 @@
+.my-cart{
+    background-color: #839192;
+    box-shadow: 3px 3px 6px gray;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.my-cart h4{
+    text-align: center;
+}
