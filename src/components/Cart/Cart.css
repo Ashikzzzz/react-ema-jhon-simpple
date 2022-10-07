@@ -4,7 +4,18 @@
     padding: 5px;
     border-radius: 5px;
     font-weight: 600;
+    margin-bottom: 10px;
+}
+.my-cart:hover{
+    background-color: #34495E;
+    color: white;
+    font-weight: 600;
 }
 .my-cart h4{
     text-align: center;
+}
+
+.cart{
+    position: sticky;
+    top: 0;
 }
