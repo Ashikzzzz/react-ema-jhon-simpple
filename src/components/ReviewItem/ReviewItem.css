@@ -1,0 +1,13 @@
+.review-item img{
+    width: 91px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px gray;
+}
+.review-detail-container{
+    display: flex;
+}
+.review-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
