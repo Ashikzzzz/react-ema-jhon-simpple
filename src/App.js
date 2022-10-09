@@ -11,6 +11,7 @@ import Shop from "./components/Shop/Shop";
 import Orders from "./components/Orders/Orders";
 import Inventory from "./components/Inventory/Inventory";
 import About from "./components/About/About";
+import { productsAndCart } from "./loaders/productsAndCart";
 
 function App() {
   useEffect(() => {
@@ -33,9 +34,7 @@ function App() {
         },
         {
           path: "orders",
-          loader: async () => {
-            return fetch("products.json");
-          },
+          loader: productsAndCart,
           element: <Orders></Orders>,
         },
         {

@@ -11,6 +11,7 @@ const Shop = () => {
 
   // states
   const [cart, setCart] = useState([]);
+  // console.log(cart);
 
   // load data from local storage
   useEffect(() => {
