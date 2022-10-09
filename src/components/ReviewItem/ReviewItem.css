@@ -5,9 +5,46 @@
 }
 .review-detail-container{
     display: flex;
+    margin-left: 17px;
+    justify-content: space-between;
+    width: 100%;
+   
 }
 .review-item{
     display: flex;
-    justify-content: center;
+   width: 571px;
+   border: 2px solid gray;
+   border-radius: 15px;
+   padding: 10px;
+   box-shadow: 4px 4px 6px cadetblue;
+   margin:21px auto;
+   align-items: center;
+}
+.detail-container p{
+    margin: 0;
+}
+
+/* delete btn style */
+.delete-icon{
+    width: 31px;
+    height: 31px;
+    color: white;
+}
+
+.delete-container{
+    display: flex;
     align-items: center;
+}
+
+.btn-dlt{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    background-color: cornflowerblue;
+    
+}
+.btn-dlt:hover{
+    background-color: cadetblue;
+    cursor:grab;
 }
