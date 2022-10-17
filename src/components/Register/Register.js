@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Contexts/UserContext";
 import "./Register.css";
 
 const Register = () => {
-  const [error, setError] = useState("");
+  const [error, setError] = useState(null);
+  const { createUser } = useContext(AuthContext);
 
   const handleRegisterSubmit = (event) => {
     event.preventDefault();
@@ -22,7 +24,13 @@ const Register = () => {
       return;
     }
 
-    console.log(email, password, confirm);
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        form.reset();
+      })
+      .catch((error) => console.error(error));
   };
 
   return (
