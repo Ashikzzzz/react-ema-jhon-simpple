@@ -12,6 +12,8 @@ import Orders from "./components/Orders/Orders";
 import Inventory from "./components/Inventory/Inventory";
 import About from "./components/About/About";
 import { productsAndCart } from "./loaders/productsAndCart";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
 
 function App() {
   useEffect(() => {
@@ -44,6 +46,14 @@ function App() {
         {
           path: "/about",
           element: <About></About>,
+        },
+        {
+          path: "/login",
+          element: <Login></Login>,
+        },
+        {
+          path: "/register",
+          element: <Register></Register>,
         },
       ],
     },
