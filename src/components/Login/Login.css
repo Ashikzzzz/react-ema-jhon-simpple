@@ -29,6 +29,9 @@
     box-shadow: 2px 2px 4px cadetblue;
     font-size: 1.5em;
 }
+.form-control input:hover{
+    box-shadow: 5px 5px 12px cadetblue;
+}
 .btn-submit{
     width: 422px;
     height: 55px;
