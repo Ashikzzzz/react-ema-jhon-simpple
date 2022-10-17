@@ -24,3 +24,14 @@
     color: black;
     font-weight: 600;
 }
+.out-btn{
+    margin-left: 10px;
+    background-color: #ABB2B9;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px cadetblue;
+}
+.out-btn:hover{
+background-color: cadetblue;
+}
