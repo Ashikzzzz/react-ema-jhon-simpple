@@ -51,3 +51,8 @@
 .register-text{
     margin-left: 11px;
 }
+
+/* error  */
+.text-error{
+    color: red;
+}
